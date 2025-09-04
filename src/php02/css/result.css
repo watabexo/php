@@ -1,0 +1,66 @@
+/* 結果表示のコンテンツ全体について */
+.result__content {
+    margin: 0 auto;
+    /* 左右中央寄せ */
+    padding: 60px 15px;
+    /* 上下に余白60px、左右に少し15px */
+    max-width: 1230px;
+    /* 横幅の最大は1230pxに */
+}
+
+/* 国旗の表示方法について */
+.result-cards {
+    display: flex;
+    /* 横並びに */
+    justify-content: center;
+    /* 横方向に中央寄せ */
+}
+
+/* 各国旗の見た目 */
+.result-card {
+    margin: 0 20px;
+    /* 国旗同氏の間に左右20pxの余白 */
+    width: 360px;
+    /* 横幅は360px */
+    border-radius: 3px;
+    /* 角丸：角を少し丸く */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+    /* 影を付けて少し浮かせたように見せる */
+}
+
+/* 画像の縦横の比率設定(親) */
+.result-card__img-wrapper {
+    position: relative;
+    /* 子要素の基準にする＝.result-card__imgの通り */
+    padding-top: 56.25%;
+    /* 高さ16:9の意味（横幅に対して56.25%＝360×0.5625=202.5px) */
+}
+
+/* 実際の画像のスタイル */
+.result-card__img {
+    position: absolute;/* 表示場所は下記に従う */
+    top: 50%;/* 上端を50％ */
+    width: 100%;/* 横幅はいっぱいに＝360px */
+    /*↑画像が画面いっぱいになる原因？*/
+    height: 100%;/* 高さもいっぱいに＝横360px×0.5625=202.5px */
+    transform: translateY(-50%);/* 画像を上下中央に配置（position: absoluteとセットで使って初めて中央になる） */
+    /* object-fit: cover; 大きい画像も設定のサイズに調整する*/
+}
+
+/* 都市名と時間のテキストについて */
+.result-card__body {
+    display: flex;
+    /* 横並びにしますよ */
+    justify-content: space-between;
+    /* 国旗の幅を基準に両端に配置（都市名↔時間） */
+    padding: 15px;
+    /* 内側に余白＝テキストの上下左右に15pxの余白 */
+}
+
+/* 都市名と時間の共通スタイル */
+.result-card__city,
+.result-card__time {
+    margin: 0;
+    /* 初期設定の余白をなくす */
+    font-size: 18px;
+}

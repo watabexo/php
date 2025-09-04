@@ -1,0 +1,24 @@
+
+/* ヘッダー全体 */
+.header {
+    background: #000;
+}
+
+/* ヘッダーの中 */
+.header__inner {
+    margin: 0 auto;
+    /* ヘッダーが中央揃え */
+    padding: 20px 15px;
+    /* ヘッダーの幅上下20px、左右15pxの余白 */
+    max-width: 1230px;
+    /* 幅広すぎる画面でもMax1230pxまで */
+}
+
+/* ロゴのデザイン */
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    /* 下線を消すやつ */
+    font-weight: bold;
+    font-size: 24px;
+}

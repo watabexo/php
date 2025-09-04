@@ -1,0 +1,19 @@
+/* ヘッダーの大枠 */
+.header {
+    background: #000;
+}
+
+/* ヘッダー*/
+.header__inner {
+    margin: 0 auto;/* 外側の余白上下0、左右中央 */
+    padding: 20px 15px;/* 内側余白は上下、左右 */
+    max-width: 1230px;/* Maxの横幅 */
+}
+
+/* ヘッダー内のロゴ */
+.header__logo {
+    color: #fff;
+    text-decoration: none;/* 下線をなくすやつ（HTMLでロゴにaタグをつけたから） */
+    font-weight: bold;
+    font-size: 24px;
+}

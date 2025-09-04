@@ -1,0 +1,73 @@
+/* 検索フォーム全体について */
+.search-form__content {
+    margin: 0 auto;
+    /* 中央寄せ */
+    padding: 60px 15p;
+    /* 上下60px、15pxの余白 */
+    max-width: 1230px;
+    /* どんなに幅広画面でも最大1230pxまで */
+}
+
+/* 「日本と世界の時間を比較」のスタイル */
+.search-form__content-title {
+    text-align: center;
+    /* 中央揃え */
+}
+
+/* 検索フォーム本体（都市と検索ボタン） */
+.search-form {
+    display: flex;
+    /* 横並びにするよ */
+    justify-content: center;
+    /* （水平方向の配置）中央揃えにする */
+}
+
+/* 都市選択ボックスの外枠 */
+.search-form__item {
+    padding: 0 5px;
+    /* 左右に5pxの余白＝検索ボタンとの間5px */
+    width: 300px;
+    /* 幅を300px＝都市選択ボックスの幅 */
+}
+
+/* 都市選択ボックスのスタイル */
+.search-form__item-select {
+    padding: 10px;
+    /* 内側の余白 */
+    width: 100%;
+    /* 親要素いっぱいに幅を広げる＝300px */
+    height: 40px;
+    /* ボックスの高さ */
+    border: 1px solid #ddd;
+    /* 薄いグレーの枠線 */
+    border-radius: 3px;
+    /* 角丸：少し丸みをつける */
+    appearance: none;
+    /* 初期設定のスタイルを消す */
+}
+
+/* 検索ボタンの外枠 */
+.search-form__button {
+    padding: 0 5px;
+    /* 左右に5pxの余白 */
+    width: 120px;
+    /* ボタンの幅 */
+}
+
+/* 検索ボタンのスタイル */
+.search-form__button-submit {
+    padding: 10px;
+    /* 内側余白 */
+    width: 100%;
+    /* 親要素いっぱいの幅＝120px */
+    height: 40px;
+    /* 高さ */
+    border: none;
+    /* 枠線なし */
+    border-radius: 3px;
+    /* 角丸：角を少し丸く */
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    /* カーソルを指マークにして、クリック可能に見せる */
+}

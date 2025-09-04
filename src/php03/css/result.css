@@ -1,0 +1,55 @@
+
+/* ヘッダーから下の部分 */
+.result__content {
+    margin: 0 auto;/* 外余白中央揃え */
+    padding: 60px 15px;/* 内余白（実際枠はないが）上下　左右 */
+    max-width: 1230px;/* 最大幅 */
+}
+
+/* 正解不正解の表示 */
+.result {
+    text-align: center;
+}
+
+/* 正解の時 */
+.result__text--correct {
+    color: #ff0000;
+}
+
+/* 不正解の時 */
+.result__text--incorrect {
+    color: #0000ff;
+}
+
+
+
+/* 回答の詳細 */
+.answer-table {
+    border: 1px solid #ddd;/* 枠線：太さ、1本線、色 */
+}
+
+/* 表の本体 */
+.answer-table__inner {
+    width: 100%;/* 親要素1230pxいっぱいに */
+}
+
+/* タイトルのステータスコード、説明 */
+.answer-table__header {
+    padding: 15px;/* 内余白 */
+    width: 20%;/* 親要素1230pxの内20% */
+    border-bottom: 1px solid #ddd;/* 枠の下線：太さ、1本線、色（※ステータスと説明の間にある線を作るため） */
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* コードと説明文 */
+.answer-table__text {
+    padding: 15px;/* 内余白 */
+    border-bottom: 1px solid #ddd;/* 枠の下線（選択されたコードと説明文の間に来る線） */
+}
+
+/* 説明と説明文の下枠線は目立たせないの意味 */
+.answer-table__row:last-child .answer-table__header,
+.answer-table__row:last-child .answer-table__text {
+    border-bottom-width: 0;/* 枠の下の線の太さ０ */
+}

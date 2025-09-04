@@ -1,0 +1,70 @@
+/* Qが書かれているブロックの作成 */
+.quiz__content {
+    margin: 0 auto;/* 外側余白（左右中央） */
+    padding: 60px 15px;/* 内側余白 */
+    max-width: 1230px;/* Max横幅 */
+}
+
+/* Qが書かれる黒い箱の作成 */
+.question {
+    margin: 0 auto;/* 左右中央 */
+    padding: 10px 20px;/* 黒い枠の文字から見て上下左右の余白ちょい左寄り？ */
+    width: 550px;/* 横幅 */
+    border-radius: 3px;/* 角丸 */
+    background: #000;
+    text-align: center;/* 文字揃え中央 今回の場合は箱の位置*/
+}
+
+/* Qの文字 */
+.question__text {
+    color: #fff;
+    text-align: left;/* 文字揃え左寄り */
+}
+
+/* フォーム全体のスタイル（選択肢から下） */
+.quiz-form {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 550px;
+    text-align: center;
+}
+
+.quiz-form__item {
+    margin-bottom: 30px;
+}
+
+.quiz-form__group {
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.quiz-form__radio {
+    display: none;
+}
+
+.quiz-form__radio:checked+label {
+    background: #ddd;
+}
+
+.quiz-form__label {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.quiz-form__button {
+    width: 550px;
+}
+
+.quiz-form__button-submit {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
